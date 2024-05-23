@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.violet {
+  background-color: #650dc9;
+}
+
+.reddit-mono {
+  font-family: "Reddit Mono", monospace;
+  font-optical-sizing: auto;
+  /* font-weight: 600; */
+  font-style: normal;
+}
+
+@keyframes underline-from-center {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.underline-hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px; /* Thickness of the underline */
+  background-color: currentColor;
+  width: 0;
+  transition: width 0.4s;
+  margin-bottom: -3px;
+}
+
+.underline-hover:hover::before {
+  width: 100%;
+}
+
+/* Custom white shadow */
+/* Custom white shadow */
+.hover\\:white-shadow:hover {
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.6);
+  transition: box-shadow 0.3s ease;
+}
